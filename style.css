@@ -23,6 +23,7 @@
     top: 0;
     height: 100%;
     background: var(--main-color);
+    z-index: 100;
 }
 
 .sidebar-brand {
@@ -34,6 +35,10 @@
 .sidebar-brand span {
     display: inline-block;
     padding-right: 1rem;
+}
+
+.sidebar-menu {
+    margin-top: 1rem;
 }
 
 .sidebar-menu li{
@@ -69,8 +74,21 @@
 header {
     display: flex;
     justify-content: space-between;
-    padding: 1rem;
+    padding: 1rem 1.5rem;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    left: 345px;
+    width: calc(100% - 345px);
+    z-index: 100;
+}
+
+header h2 {
+    color: #222;
+}
+
+header label span {
+    font-size: 1.7rem;
+    padding-right: 1rem;
 }
 
 .search-wrapper {
