@@ -2,6 +2,7 @@
 
 :root {
     --main-color: #DD2F6E;
+    --secondary-color: #fff;
     --color-dark: #1D2231;
     --text-grey: #8390A2;
 }
@@ -22,4 +23,41 @@
     top: 0;
     height: 100%;
     background: var(--main-color);
+}
+
+.sidebar-brand {
+    height: 90px;
+    padding: 1rem 0rem 1rem 2rem;
+    color: var(--secondary-color);
+}
+
+.sidebar-brand span {
+    display: inline-block;
+    padding-right: 1rem;
+}
+
+.sidebar-menu li{
+    width: 100%;
+    margin-bottom: 1.7rem;
+    padding-left: 2rem;
+}
+
+.sidebar-menu a {
+    padding-left: 1rem;
+    display: block;
+    color: var(--secondary-color);
+    font-size: 1.1rem;
+}
+
+.sidebar-menu a.active {
+    background: var(--secondary-color);
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    color: var(--main-color);
+    border-radius: 30px 0px 0px 30px;
+}
+
+.sidebar-menu a span:first-child {
+    font-size: 1.5rem;
+    padding-right: 1rem;
 }
