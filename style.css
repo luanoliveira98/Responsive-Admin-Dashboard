@@ -169,3 +169,7 @@ main {
 .card-single:last-child div:last-child span {
     color: var(--secondary-color);
 }
+
+table {
+    border-collapse: collapse;
+}
